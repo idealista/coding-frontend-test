@@ -1,0 +1,40 @@
+@import '../style/common.less';
+
+.application-section {
+    margin-bottom: 2rem;
+}
+
+.grid-column {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.property {
+    margin: 1em auto;
+    display: flex;
+}
+
+.property__info {
+    margin-left: 1rem;
+    &-description {
+        font-weight: 700;
+    }
+    &-text {
+        line-height: 1.5rem;
+        margin-top: .5rem;
+    }
+}
+
+.review,
+.news {
+    flex-basis: 30%;
+}
+
+.review__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}

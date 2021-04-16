@@ -1,0 +1,72 @@
+@import './reset.css';
+@import './vars.less';
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin: 2em auto 3em;
+}
+
+.header {
+    background-color: @idealista-primary;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.header__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header__item {
+    padding: 1em;
+
+    &:hover {
+        background-color: @idealista-dark;
+    }
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.title-exercise {
+    margin-bottom: 3.5rem;
+    span {
+        color: @lime-50;
+        font-weight: 700;
+    }
+}
+
+.section-title {
+    color: @idealista-secondary-dark;
+    margin: 2.5rem 0 1.5rem;
+    font-weight: 700;
+}
+
+.box {
+    border-radius: 4px;
+    box-shadow: @box-shadow;
+    border: solid 1px @grey-1;
+    padding: 1rem;
+    background-color: @white;
+}
+

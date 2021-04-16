@@ -1,0 +1,28 @@
+@import '../style/common.less';
+@import './answer2.less';
+
+.reviews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.review {
+    flex-basis: 30%;
+}
+
+.review__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.review__score__icon {
+    color: @grey-2;
+}
+
+.review__name {
+    font-weight: 800;
+}
